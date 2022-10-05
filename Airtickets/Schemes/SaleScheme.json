@@ -1,0 +1,100 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sale operation",
+  "type": "object",
+  "properties": {
+    "operation_type": {
+      "description": "Provide type of operation",
+      "type": "string"
+    },
+    "operation_time": {
+      "description": "Time of the operation beginning",
+      "type": "string",
+      "format": "date-time"
+    },
+    "operation_place": {
+      "description": "Place of the operation beginning",
+      "type": "string"
+    },
+    "passenger": {
+      "description": "The person who request operation",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "patronymic": {
+          "type": "string"
+        },
+        "doc_type": {
+          "type": "string",
+          "pattern": "^[0-9][0-9]$"
+        },
+        "doc_number": {
+          "type": "string"
+        },
+        "birthdate": {
+          "type": "string",
+          "format": "date"
+        },
+        "gender": {
+          "enum": [
+            "M",
+            "F"
+          ]
+        },
+        "passenger_type": {
+          "type": "string"
+        },
+        "ticket_number": {
+          "type": "string",
+          "pattern": "^[0-9]{13}"
+        },
+        "ticket_type": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "routes": {
+      "description": "The segment of the ticket",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "airline_code": {
+            "type": "string"
+          },
+          "flight_num": {
+            "type": "number"
+          },
+          "depart_place": {
+            "type": "string"
+          },
+          "depart_datetime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "arrive_place": {
+            "type": "string"
+          },
+          "arrive_datetime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pnr_id": {
+            "type": "string"
+          },
+          "additionalProperties": false
+        }
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "additionalProperties": false
+  },
+  "additionalProperties": false
+}

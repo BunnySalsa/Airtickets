@@ -1,0 +1,21 @@
+﻿{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "title": "Refund operation",
+  "properties": {
+    "operation_type": {
+      "type" : "string"
+    },
+    "operation_time": {
+      "type" : "string",
+      "format": "date-time"
+    },
+    "operation_place": {
+      "type" : "string"
+    },
+    "ticket_number": {
+      "type": "string",
+      "pattern": "^[0-9]{13}"
+    }
+  },
+  "additionalProperties": false
+}
