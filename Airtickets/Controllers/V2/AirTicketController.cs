@@ -1,5 +1,4 @@
-﻿using System.Text.Json.Nodes;
-using Airtickets.Entities;
+﻿using Airtickets.Entities;
 using Airtickets.Filters;
 using Airtickets.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +13,9 @@ public class AirTicketController : ControllerBase
 {
     private readonly TicketService _service;
 
-    public AirTicketController()
+    public AirTicketController(TicketService service)
     {
-        _service = TicketService.GetInstance();
+        _service = service;
     }
 
     [HttpPost("/process/sale")]

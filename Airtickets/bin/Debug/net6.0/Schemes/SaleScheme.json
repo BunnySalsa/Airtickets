@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Sale operation",
   "type": "object",
+  "required": ["operation_type","operation_time","operation_place","passenger","routes"],
   "properties": {
     "operation_type": {
       "description": "Provide type of operation",
@@ -19,6 +20,8 @@
     "passenger": {
       "description": "The person who request operation",
       "type": "object",
+      "required": ["name","surname","patronymic","doc_type","doc_number","birthdate","gender","passenger_type",
+        "ticket_number","ticket_type"],
       "properties": {
         "name": {
           "type": "string"
@@ -64,6 +67,7 @@
       "type": "array",
       "items": {
         "type": "object",
+        "required": ["airline_code","flight_num","depart_place","depart_datetime","arrive_place","arrive_datetime","pnr_id"],
         "properties": {
           "airline_code": {
             "type": "string"

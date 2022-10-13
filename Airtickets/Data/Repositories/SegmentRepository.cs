@@ -1,3 +1,4 @@
+using System.Data;
 using Airtickets.Entities;
 using Airtickets.Models;
 
@@ -5,44 +6,40 @@ namespace Airtickets.Data.Repositories;
 
 public class SegmentRepository
 {
-    private const string RepeatedOperationMessageS = "Repeated attempt to perform the operation or ticket doesn't exist";
+    private const string RepeatedOperationMessageS =
+        "Repeated attempt to perform the operation or ticket doesn't exist";
+
     private const string SetLockTimeoutSql = "SET LOCAL lock_timeout = '120s'";
 
     private const string UpdateSegmentStatusSql = "UPDATE public.\"Segments\" SET \"Status\"={1} " +
                                                   "WHERE \"TicketNumber\"={0} AND \"Status\" <> {1}";
 
-    private static SegmentRepository _repository;
-    private readonly DbContextFactory _contextFactory;
+    private readonly AirTicketsDBContext _context;
 
-    private SegmentRepository()
+    public SegmentRepository(AirTicketsDBContext context)
     {
-        _contextFactory = DbContextFactory.GetInstance();
+        _context = context;
     }
 
-    public static SegmentRepository GetInstance()
+    public async Task SaleAsync(IEnumerable<Segment> segments)
     {
-        if (_repository == null)
-            _repository = new SegmentRepository();
-        return _repository;
-    }
-
-    public async Task Save(IEnumerable<Segment> segments)
-    {
-        await using (var context = _contextFactory.CreateAirTicketsDbContext())
-        {
-            context.Database.ExecuteSqlRaw(SetLockTimeoutSql);
-            context.AddRange(segments);
-            context.SaveChanges();
-        }
+        await using var transaction = await _context.Database.BeginTransactionAsync(IsolationLevel.Serializable);
+        await _context.Database.ExecuteSqlRawAsync(SetLockTimeoutSql);
+        await _context.AddRangeAsync(segments);
+        await _context.SaveChangesAsync();
+        await transaction.CommitAsync();
     }
 
     public async Task RefundAsync(String ticketNumber)
     {
-        await using (var context = _contextFactory.CreateAirTicketsDbContext())
+        await using var transaction = await _context.Database.BeginTransactionAsync(IsolationLevel.Serializable);
+        if (await _context.Database.ExecuteSqlRawAsync(UpdateSegmentStatusSql, ticketNumber,
+                SegmentStatus.Refunded) == 0)
         {
-            if (context.Database.ExecuteSqlRaw(UpdateSegmentStatusSql, ticketNumber, SegmentStatus.Refunded) == 0)
-                throw new InvalidOperationException(RepeatedOperationMessageS);
-            context.SaveChanges();
+            await transaction.RollbackAsync();
+            throw new InvalidOperationException(RepeatedOperationMessageS);
         }
+
+        await transaction.CommitAsync();
     }
 }

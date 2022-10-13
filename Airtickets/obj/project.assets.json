@@ -1300,11 +1300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Airtickets\\Airtickets\\Airtickets.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Новая папка\\Airtickets\\Airtickets\\Airtickets.csproj",
       "projectName": "Airtickets",
-      "projectPath": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Airtickets\\Airtickets\\Airtickets.csproj",
+      "projectPath": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Новая папка\\Airtickets\\Airtickets\\Airtickets.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Airtickets\\Airtickets\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Projects\\DefInfoTrans\\Новая папка\\Airtickets\\Airtickets\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

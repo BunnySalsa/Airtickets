@@ -56,11 +56,12 @@ public class ErrorHandlerMiddleware
         }
     }
 
-    private async Task<HttpResponse> CreateHandleResponseAsync(HttpContext context, HttpStatusCode code, Exception exception)
+    private async Task<HttpResponse> CreateHandleResponseAsync(HttpContext context, HttpStatusCode code,
+        Exception exception)
     {
         var response = context.Response;
         response.ContentType = "application/json";
-        response.StatusCode = (int) code;
+        response.StatusCode = (int)code;
         var result = JsonSerializer.Serialize(new { message = exception?.Message });
         await response.WriteAsync(result);
         return response;

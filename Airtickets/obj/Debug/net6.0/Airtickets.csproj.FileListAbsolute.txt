@@ -197,3 +197,46 @@ D:\Projects\DefInfoTrans\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.pdb
 D:\Projects\DefInfoTrans\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.genruntimeconfig.cache
 C:\Users\admin\Projects\DefInfoTrans\Airtickets\Airtickets\bin\Debug\net6.0\Schemes\RefundScheme.json
 C:\Users\admin\Projects\DefInfoTrans\Airtickets\Airtickets\bin\Debug\net6.0\Schemes\SaleScheme.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\appsettings.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Schemes\RefundScheme.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Schemes\SaleScheme.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Airtickets.exe
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Airtickets.deps.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Airtickets.runtimeconfig.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Airtickets.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Airtickets.pdb
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Humanizer.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Json.More.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\JsonPointer.Net.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\JsonSchema.Net.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Npgsql.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.csproj.AssemblyReference.cache
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.AssemblyInfoInputs.cache
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.AssemblyInfo.cs
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.csproj.CoreCompileInputs.cache
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\scopedcss\bundle\Airtickets.styles.css
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.csproj.CopyComplete
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\refint\Airtickets.dll
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.pdb
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\Airtickets.genruntimeconfig.cache
+C:\Users\admin\Projects\DefInfoTrans\Новая папка\Airtickets\Airtickets\obj\Debug\net6.0\ref\Airtickets.dll

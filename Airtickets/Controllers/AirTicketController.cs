@@ -13,9 +13,9 @@ public class AirTicketController : ControllerBase
 {
     private readonly TicketService _service;
 
-    public AirTicketController()
+    public AirTicketController(TicketService service)
     {
-        _service = TicketService.GetInstance();
+        _service = service;
     }
 
     [HttpPost("/process/sale")]
