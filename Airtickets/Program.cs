@@ -1,7 +1,10 @@
 global using Airtickets.Data;
 global using Microsoft.EntityFrameworkCore;
+using Airtickets.Data.Repositories;
 using Airtickets.Filters;
 using Airtickets.Middleware;
+using Airtickets.Services;
+using Airtickets.Validators;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -13,8 +16,12 @@ builder.Services.AddDbContext<AirTicketsDBContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddControllers();
+builder.Services.AddSingleton<JsonValidator>();
+builder.Services.AddSingleton<TicketValidator>();
 builder.Services.AddScoped<SaleAsyncResourceFilter>();
 builder.Services.AddScoped<RefundResourceFilter>();
+builder.Services.AddScoped<SegmentRepository>();
+builder.Services.AddScoped<TicketService>();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddApiVersioning(config =>
 {

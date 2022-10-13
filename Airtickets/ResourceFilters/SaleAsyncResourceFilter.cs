@@ -14,10 +14,10 @@ public class SaleAsyncResourceFilter : IResourceFilter
     private readonly JsonValidator _jsonValidator;
     private readonly TicketValidator _ticketValidator;
 
-    public SaleAsyncResourceFilter()
+    public SaleAsyncResourceFilter(JsonValidator jsonValidator, TicketValidator ticketValidator)
     {
-        _jsonValidator = JsonValidator.GetInstance();
-        _ticketValidator = TicketValidator.GetInstance();
+        _jsonValidator = jsonValidator;
+        _ticketValidator = ticketValidator;
     }
 
     public void OnResourceExecuting(ResourceExecutingContext context)
